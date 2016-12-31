@@ -2,7 +2,7 @@
 Import and export mongodb databases
 
 ## Export
-```{r, engine='bash', count_lines}
+```{r, engine='sh', count_lines}
 #!/bin/bash
 
 if [ ! $1 ]; then
