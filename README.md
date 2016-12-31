@@ -47,10 +47,7 @@ fi
 
 for file in $out_dir*.json; 
 do 
-    #c=${file#*exp_+$db+_}; 
-    #c=${file%.json};
-    #c=${c%out_dir};
-    mongoimport --db $db --collection "${c}" --file "${file}"; 
+    mongoimport --db $db --collection "" --file "${file}"; 
 done
 
 
